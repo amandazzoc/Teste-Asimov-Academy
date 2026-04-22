@@ -60,12 +60,12 @@ export function Card({ title, subtitle, variant = "light", illustration }: Props
       <div className="flex flex-col justify-between z-10 gap-[93px]">
         <div className="flex flex-col">
           <div className={`inline-block px-[7px] rounded-[7px] w-fit ${styles.titleBox}`}>
-            <span className={`text-3xl font-medium leading-tight whitespace-pre-line ${styles.titleText}`}>
+            <span className={`lg:text-3xl text-2xl font-medium leading-tight whitespace-pre-line ${styles.titleText}`}>
               {title}
             </span>
           </div>
           <div className={`inline-block px-[7px] rounded-[7px] w-fit ${styles.titleBox}`}>
-            <span className={`text-3xl font-medium leading-tight whitespace-pre-line ${styles.titleText}`}>
+            <span className={`lg:text-3xl text-2xl font-medium leading-tight whitespace-pre-line ${styles.titleText}`}>
               {subtitle}
             </span>
           </div>

@@ -3,7 +3,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #191a23;
   
   /* Design System Colors */
   --color-lime: #b9ff66;
@@ -107,4 +107,55 @@ body {
 
 .typo-accent .text {
   color: var(--color-dark);
+}
+
+/* Marquee animations for logos */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(-33.33%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-right {
+  animation: marquee-right 20s linear infinite;
+}
+
+.animate-marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+/* Carousel animation */
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.66%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 100s linear infinite;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
