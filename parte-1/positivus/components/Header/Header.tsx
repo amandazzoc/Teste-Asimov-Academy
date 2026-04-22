@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Header() {
     return (
-        <header className="px-[100px] flex items-center justify-between">
+        <header className="flex items-center justify-between">
             <div className="flex gap-[35px] flex-col w-[520px]">
                 <h1 className="text-6xl font-medium">Navigating the digital landscape for success</h1>
 

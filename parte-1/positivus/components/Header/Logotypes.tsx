@@ -11,7 +11,7 @@ const LOGOS = [
 
 export function Logotypes() {
     return (
-        <div className="flex px-[100px] items-center justify-between">
+        <div className="flex items-center justify-between">
             {LOGOS.map((logo) => (
                 <Image
                     key={logo.alt}

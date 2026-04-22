@@ -3,7 +3,7 @@ import { Button } from "../Button";
 
 export function Navbar() {
     return (
-        <nav className="px-[100px] flex items-center justify-between">
+        <nav className="flex items-center justify-between">
             <Image src="/Logo.png" alt="Positivus Logo" width={219.54} height={36} className="py-2.5"/>
 
             <ul className="flex gap-10 text-xl items-center">
