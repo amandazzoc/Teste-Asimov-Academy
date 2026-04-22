@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  
+  /* Design System Colors */
+  --color-lime: #b9ff66;
+  --color-dark: #191a23;
+  --color-gray: #f3f3f3;
+  --color-white: #ffffff;
+}
+
+/* css-ignore */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-lime: #b9ff66;
+  --color-dark: #191a23;
+  --color-gray: #f3f3f3;
+  --font-sans: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+}
+
+/* Typography Scale - Desktop */
+.heading-h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.heading-h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.heading-h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.heading-h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Typography Scale - Mobile */
+@media (max-width: 768px) {
+  .heading-h1 {
+    font-size: 43px;
+  }
+  
+  .heading-h2 {
+    font-size: 36px;
+  }
+  
+  .heading-h3 {
+    font-size: 24px;
+  }
+  
+  .heading-h4 {
+    font-size: 16px;
+  }
+  
+  .text-body {
+    font-size: 14px;
+  }
+}
+
+/* Label Component (green background) */
+.label {
+  display: inline-block;
+  background-color: var(--color-lime);
+  color: var(--color-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Typography with accent (green part + dark part) */
+.typo-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.typo-accent .accent {
+  color: var(--color-lime);
+}
+
+.typo-accent .text {
+  color: var(--color-dark);
+}
