@@ -2,7 +2,7 @@ import { Button } from "./Button";
 
 export function Navbar() {
   return (
-    <nav className="py-8 flex items-center justify-between bg-color-foreground">
+    <nav className="py-8 flex items-center justify-between bg-color-foreground lg:px-[100px]">
         <h1 className="logo text-2xl">ASIMOV</h1>
         <ul className="flex items-center gap-8 text-secondary-text">
             <li className="hover:text-primary cursor-pointer transition-colors">CURRÍCULO</li>

@@ -26,6 +26,7 @@ raise Exception("Start now.")`;
 
     const [displayedText, setDisplayedText] = useState("");
     const [isFinished, setIsFinished] = useState(false);
+    const [restartKey, setRestartKey] = useState(0);
 
     useEffect(() => {
         let i = 0;
@@ -35,12 +36,17 @@ raise Exception("Start now.")`;
                 i++;
             } else {
                 clearInterval(typingInterval);
-                setIsFinished(true); 
+                setIsFinished(true);
+
+                // Restart animation after 3 seconds
+                setTimeout(() => {
+                    setRestartKey(prev => prev + 1);
+                }, 3000);
             }
-        }, 20); 
+        }, 20);
 
         return () => clearInterval(typingInterval);
-    }, []);
+    }, [restartKey]);
 
     const renderColoredText = (text: string) => {
         const keywords = ['import', 'as', 'from', 'def', 'if', 'return', 'raise', 'True'];
