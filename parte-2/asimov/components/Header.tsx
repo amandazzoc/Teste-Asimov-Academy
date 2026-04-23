@@ -43,27 +43,27 @@ export function Header() {
                 }}
             />
 
-            <header className="relative z-10 flex items-center justify-between py-20 lg:px-[100px] px-[20px] min-h-[calc(100vh-106px)]">
-                <div className="flex flex-col gap-7 w-[40%]">
+            <header className="relative z-10 flex flex-col lg:flex-row items-center justify-between py-20 lg:px-[100px] px-[20px] min-h-[calc(100vh-106px)] gap-12">
+                <div className="flex flex-col gap-7 w-full lg:w-[40%]">
                     <Badge icon={SquareCodeIcon} text="INSCRIÇÕES ABERTAS" />
-                    <h1 className="text-6xl font-bold">
+                    <h1 className="text-4xl lg:text-6xl font-bold">
                         Aprenda Python do zero e construa projetos reais com IA
                     </h1>
-                    <p className="text-lg text-secondary-text">
+                    <p className="text-base lg:text-lg text-secondary-text">
                         O curso mais prático do Brasil para quem quer entrar em tecnologia sem enrolação
                     </p>
-                    <div className="grid grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                         <BenefitCard icon={Clock10Icon} text="+40 horas de conteúdo direto ao ponto" />
                         <BenefitCard icon={CpuIcon} text="Projetos com Python + IA desde o módulo 1" />
                         <BenefitCard icon={UsersIcon} text="Suporte da comunidade com +20.000 alunos" />
                         <BenefitCard icon={CircleStarIcon} text="Certificado reconhecido pelo mercado" />
                     </div>
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col lg:flex-row items-center gap-4">
                         <Button variant="primary" size="lg" label="Quero começar agora" />
                         <Button variant="secondary" size="lg" label="Ver o que vou aprender" />
                     </div>
                 </div>
-                <div className="w-[60%] flex justify-center">
+                <div className="w-full lg:w-[60%] flex justify-center">
                     <AnimatedCodeBlock />
                 </div>
             </header>
