@@ -44,7 +44,7 @@ export function Header() {
             />
 
             <header className="relative z-10 flex flex-col lg:flex-row items-center justify-between py-20 lg:px-[100px] px-[20px] min-h-[calc(100vh-106px)] gap-12">
-                <div className="flex flex-col gap-7 w-full lg:w-[40%]">
+                <div className="flex flex-col gap-7 w-full lg:w-1/2">
                     <Badge icon={SquareCodeIcon} text="INSCRIÇÕES ABERTAS" />
                     <h1 className="text-4xl lg:text-6xl font-bold">
                         Aprenda Python do zero e construa projetos reais com IA
@@ -63,7 +63,7 @@ export function Header() {
                         <Button variant="secondary" size="lg" label="Ver o que vou aprender" />
                     </div>
                 </div>
-                <div className="w-full lg:w-[60%] flex justify-center">
+                <div className="w-full lg:w-1/2 flex justify-center">
                     <AnimatedCodeBlock />
                 </div>
             </header>

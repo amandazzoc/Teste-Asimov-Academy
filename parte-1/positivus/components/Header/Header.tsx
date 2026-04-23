@@ -8,7 +8,7 @@ export function Header() {
                 <h1 className="text-4xl lg:text-6xl font-medium">Navigating the digital landscape for success</h1>
                 
                 <div className="lg:hidden order-2">
-                    <Image src="/illustration.png" alt="Hero Image" width={600} height={515} className="w-auto h-96" />
+                    <Image src="/illustration.png" alt="Hero Image" width={600} height={515} className="w-auto h-[300px]" />
                 </div>
 
                 <p className="text-lg lg:text-xl w-full lg:w-[500px] order-3">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>

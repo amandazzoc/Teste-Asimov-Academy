@@ -1,5 +1,7 @@
 # Positivus
 
+![Positivus Logo](./public/Positivus.png)
+
 Agência de Marketing Digital - Site Institucional Responsivo
 
 ## 📋 Sobre o Projeto
