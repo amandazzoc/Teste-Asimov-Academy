@@ -29,61 +29,6 @@ body {
   font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
 }
 
-/* Typography Scale - Desktop */
-.heading-h1 {
-  font-size: 60px;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-.heading-h2 {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.heading-h3 {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-.heading-h4 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.text-body {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-/* Typography Scale - Mobile */
-@media (max-width: 768px) {
-  .heading-h1 {
-    font-size: 43px;
-  }
-  
-  .heading-h2 {
-    font-size: 36px;
-  }
-  
-  .heading-h3 {
-    font-size: 24px;
-  }
-  
-  .heading-h4 {
-    font-size: 16px;
-  }
-  
-  .text-body {
-    font-size: 14px;
-  }
-}
-
-/* Label Component (green background) */
 .label {
   display: inline-block;
   background-color: var(--color-lime);
@@ -94,7 +39,6 @@ body {
   font-weight: 500;
 }
 
-/* Typography with accent (green part + dark part) */
 .typo-accent {
   display: inline-flex;
   align-items: center;
@@ -136,7 +80,6 @@ body {
   animation: marquee-left 20s linear infinite;
 }
 
-/* Carousel animation */
 @keyframes carousel {
   0% {
     transform: translateX(0);
@@ -150,7 +93,6 @@ body {
   animation: carousel 100s linear infinite;
 }
 
-/* Hide scrollbar utility */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
