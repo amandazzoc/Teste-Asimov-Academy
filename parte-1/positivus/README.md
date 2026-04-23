@@ -12,7 +12,6 @@ O **Positivus** é um site institucional moderno e responsivo para uma agência 
 - **Seção de Hero**: Header impactante com call-to-action
 - **Logotipos de Clientes**: Carrossel infinito animado (marquee)
 - **Serviços**: Grid de cards apresentando os serviços da agência (SEO, PPC, Social Media, Email Marketing, Content Creation, Analytics)
-- **Estudos de Caso**: Seção dedicada a mostrar resultados reais
 - **CTA Section**: Card de conversão "Let's Make Things Happen"
 - **Design System**: Sistema de cores personalizado com tons de lime, dark, gray e white
 - **Tipografia Personalizada**: Fonte Space Grotesk do Google Fonts
@@ -62,6 +61,7 @@ positivus/
 │   └── CardServices.tsx    # Array de serviços
 ├── public/                  # Arquivos estáticos
 │   └── services-images/    # Imagens dos serviços
+│   └── company-logos/      # Imagens dos logotipos
 ├── .gitignore              # Arquivos ignorados pelo Git
 ├── package.json            # Dependências e scripts
 ├── tsconfig.json           # Configuração do TypeScript
@@ -103,7 +103,7 @@ positivus/
 
 1. **Clone o repositório**
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/amandazzoc/Teste-Asimov-Academy.git
 cd parte-1/positivus
 ```
 
